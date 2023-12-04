@@ -5,8 +5,10 @@ from notes.views.users import *
 from notes.views.images import *
 from notes.views.vaults import *
 from notes.views.notes import *
+from notes.views.main import *
 
 urlpatterns = [
+    path("", Main.as_view(), name='check'),
     path("ai/", Ai.as_view(), name='ai'),
     path("apikeys/", ApiKeys.as_view(), name='apikeys'),
     path("auth/login", Login.as_view(), name='login'),
