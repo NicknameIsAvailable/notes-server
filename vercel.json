@@ -1,14 +1,14 @@
 {
-  "builds": [
-    {
-      "src": "notes_server/wsgi.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "notes_server/wsgi.py"
-    }
-  ]
+    "builds": [
+      {
+        "src": "notes_server/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "notes_server/wsgi.py"
+      }
+    ]
 }

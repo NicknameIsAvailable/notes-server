@@ -113,10 +113,10 @@ WSGI_APPLICATION = "notes_server.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "notes",
-        "USER": "notes",
-        "PASSWORD": "notes",
-        "HOST": "134.0.118.64",
+        "NAME": "postgresql://postgres:4*cG14dDcDeFd2f*-dacGaF-54ga6DdG@monorail.proxy.rlwy.net:15320/railway",
+        "USER": "postgres",
+        "PASSWORD": "4*cG14dDcDeFd2f*-dacGaF-54ga6DdG",
+        "HOST": "monorail.proxy.rlwy.net",
     }
 }
 
